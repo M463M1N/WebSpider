@@ -188,6 +188,7 @@ if __name__ == "__main__":
         utils.log_print("[** LOG **] Succeed getting cookie")
     except:
         utils.log_print("[** ERROR LOG **] Failed getting cookie")
+        print("Error")
 
     try:
         filename = get_all_followers(cookie)
@@ -195,6 +196,7 @@ if __name__ == "__main__":
         print(filename)
     except:
         utils.log_print("[** ERROR LOG **] Failed getting followers")
+        print("Error")
 
     utils.log_print("[** LOG **] Get hotness")
     try:
@@ -203,3 +205,4 @@ if __name__ == "__main__":
         print(filename)
     except:
         utils.log_print("[** ERROR LOG **] Failed getting hotness")
+        print("Error")
