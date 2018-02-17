@@ -20,12 +20,12 @@ iconv -f UTF-8 -t GB18030 ${FILENAME} > ${DATE}_视频观看数.csv
 FILENAME=`python3 vote.py`
 iconv -f UTF-8 -t GB18030 ${FILENAME} > ${DATE}_礼物数.csv
 
-FILENAMES=`python3 weibo.py`
-FILENAME=$(echo `echo $FILENAMES` | cut -d \  -f 1)
-iconv -f UTF-8 -t GB18030 $FILENAME > ${DATE}_粉丝数.csv
+# FILENAMES=`python3 weibo.py`
+# FILENAME=$(echo `echo $FILENAMES` | cut -d \  -f 1)
+# iconv -f UTF-8 -t GB18030 $FILENAME > ${DATE}_粉丝数.csv
 
-FILENAME=$(echo `echo $FILENAMES` | cut -d \  -f 2)
-iconv -f UTF-8 -t GB18030 $FILENAME > ${DATE}_喜爱值.csv
+# FILENAME=$(echo `echo $FILENAMES` | cut -d \  -f 2)
+# iconv -f UTF-8 -t GB18030 $FILENAME > ${DATE}_喜爱值.csv
 
 git add .
 git commit -m "update"
