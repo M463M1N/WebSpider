@@ -27,3 +27,6 @@ iconv -f UTF-8 -t GB18030 $FILENAME > ${DATE}_粉丝数.csv
 FILENAME=$(echo `echo $FILENAMES` | cut -d \  -f 2)
 iconv -f UTF-8 -t GB18030 $FILENAME > ${DATE}_喜爱值.csv
 
+git add .
+git commit -m "update"
+git push
