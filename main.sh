@@ -14,13 +14,13 @@
 
 echo `date`
 DATE=`date +%Y%m%d`
-FILENAME=`python3 iqiyi.py`
+FILENAME=`python iqiyi.py`
 iconv -f UTF-8 -t GB18030 ${FILENAME} > ${DATE}_视频观看数.csv
 
-FILENAME=`python3 vote.py`
+FILENAME=`python vote.py`
 iconv -f UTF-8 -t GB18030 ${FILENAME} > ${DATE}_礼物数.csv
 
-# FILENAMES=`python3 weibo.py`
+# FILENAMES=`python weibo.py`
 # FILENAME=$(echo `echo $FILENAMES` | cut -d \  -f 1)
 # iconv -f UTF-8 -t GB18030 $FILENAME > ${DATE}_粉丝数.csv
 
